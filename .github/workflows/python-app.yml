@@ -34,9 +34,8 @@ jobs:
     - name: build Structure
       run: |
         mkdir build
-        cd build
-        cp -r src .
-        cp -r test .
+        cp -r src ./build/
+        cp -r test ./build/
     - name: Test with pytest
       run: |
         export PYTHONPATH=src
