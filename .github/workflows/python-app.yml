@@ -34,6 +34,7 @@ jobs:
     - name: build Structure
       run: |
         mkdir build
+        cd build
         cp -r src .
         cp -r test .
     - name: Test with pytest
